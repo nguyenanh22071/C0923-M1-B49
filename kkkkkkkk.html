@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="mon">
+<select id="f">
+    <onption value="1">VNĐ</onption>
+    <onption value="24000">USĐ</onption>
+</select>
+<select id="t">
+    <onption value="1">VNĐ</onption>
+    <onption value="24000">USĐ</onption>
+</select>
+<button onlick="x()">Convert</button>
+<script>
+    function x() {
+        let tien = document.getElementById('mon').value;
+        let from = document.getElementById('f').value;
+        let to = document.getElementById('t').value;
+        document.getElementById('kq').html = tien * from / to;
+        document.getElementById('kq2').value = tien * from /to;
+    }
+</script>
+
+</body>
+</html>
